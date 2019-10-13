@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:src="@mipmap/ic_launcher"
+          android:adjustViewBounds="true"
+          android:layout_margin="5dp"
+          android:id="@+id/imggiohang"
+          android:layout_width="match_parent"
+          android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+    android:textColor="#10100f"
+    android:textStyle="bold"
+    android:id="@+id/txttengiohang"
+    android:text="Tên Món Hàng"
+    android:textSize="25sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textColor="#f20"
+            android:textStyle="bold"
+            android:id="@+id/txtgiagiohang"
+            android:text="Tên Món Hàng"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:focusable="false"
+                android:text="-"
+                android:id="@+id/btnminus"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@null"
+                android:focusable="false"
+                android:text="1"
+                android:id="@+id/btnvalues"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:focusable="false"
+                android:text="+"
+                android:id="@+id/btnplus"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+             
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
